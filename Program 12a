@@ -1,0 +1,11 @@
+package program12;
+import java.applet.*;
+import java.awt.*;
+/* <applet code="SimpleApplet" width=300 height=50> </applet> */
+public class Simpleapplet extends Applet
+{
+public void paint(Graphics g)
+{
+g.drawString ("Hello world",100, 100);
+}
+}
