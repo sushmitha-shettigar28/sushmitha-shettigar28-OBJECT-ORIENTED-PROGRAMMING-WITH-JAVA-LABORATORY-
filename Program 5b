@@ -1,0 +1,23 @@
+package pgm5;
+public class Constructoroverload
+{
+int id ;
+String name ;
+Constructoroverload()
+{
+System.out.println("\nDefault constructor values: \n") ;
+System.out.println("Student ID:"+id + "\nStudent Name :" +name);
+}
+Constructoroverload(int i ,String n )
+{
+Id = i;
+Name = n;
+System.out.println("\n parameterized constructor values: \n") ;
+System.out.println("Student ID:" +id + "\nStudent Name :" +name);
+}
+public static void main (String[]args)
+{
+Constructoroverload s = new Constructoroverload();
+Constructoroverload st = new Constructoroverload(80,"shine");
+}
+}
