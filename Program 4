@@ -1,0 +1,104 @@
+package labPrograms;
+import java.util.Scanner;
+class staff_college
+{
+String staffid;
+String name;
+String phone;
+double salary;
+}
+class teaching extends staff_college
+{
+String domain;
+String publications;
+void display(String dom, String pub)
+{
+domain=dom;
+publications=pub;
+System.out.println(" the Teacher details ");
+System.out.println("staffid: "+staffid);
+System.out.println("name: "+name);
+System.out.println("phone: "+phone);
+System.out.println("salary: "+salary);
+System.out.println("domain:+domain);
+System.out.println("publications:"+publications);
+}
+class technical extends staff_college
+{
+String skills;
+void display(String skills)
+{
+System.out.println(" the Technical staff details ");
+System.out.println("staffid: "+staffid);
+System.out.println("name: "+name);
+System.out.println("phone: "+phone);
+System.out.println("salary: "+salary);
+System.out.println("skills:"+skills);
+}
+}
+class contract extendsstaff_college
+{
+String period;
+void display(String per)
+{
+System.out.println(" the Contract staff details ");
+System.out.println("staffid: "+staffid);
+System.out.println("name: "+name);
+System.out.println("phone: "+phone);
+System.out.println("salary: "+salary);
+System.out.println("period:"+period);
+}
+}
+public class OOP4
+{
+public static void main(String[] args)
+{
+String dom, pub, skills, per;
+staff_college s = new staff_college();
+teaching t1 = new teaching();
+technicalt
+t22==nenwewtecthecnhicnai
+lc(a)
+l
+;();
+contract t3 = new contract();
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the Teacher details ");
+System.out.println("enter staffid of the staff: ");
+t1.staffid = sc.next();
+System.out.println("enter name of the staff: ");
+t1.name = sc.next();
+System.out.println("enter phone of the staff: ");
+t1.phone = sc.next();
+System.out.println("enter salary of the staff: ");
+t1.salary = sc.nextDouble();
+System.out.println("enter domain of the staff: ");
+Dom = sc.next();
+System.out.println("enter publications of the staff: ");
+Pub = sc.next();
+System.out.println("enter the Technical staff details ");
+System.out.println("enter staffid of the staff:");
+t2.staffid = sc.next();
+System.out.println("enter name of the staff:");
+t2.name = sc.next();
+System.out.println("enter phone of the staff: ");
+t2.phone = sc.next();
+System.out.println("enter salary of the staff: ");
+t2.salary = sc.nextDouble();
+System.out.println("enter skills of the staff: ");
+Skills = sc.next();
+System.out.println("enter the contractor details ");
+System.out.println("enter staff id of the staff: ");
+t3.staffid = sc.next();
+System.out.println("enter name of the staff: ");
+t3.name = sc.next();
+System.out.println("enter phone of the staff: ");
+t3.phone = sc.next();
+System.out.println("enter salary of the staff: ");
+t3.salary = sc.nextDouble();
+System.out.println("enter period : ");
+Per = sc.next();
+t1.display(dom,pub);
+t2.display(skills);
+t3.display(per);
+}
