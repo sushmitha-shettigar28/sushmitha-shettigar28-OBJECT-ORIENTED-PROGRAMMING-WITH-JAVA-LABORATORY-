@@ -1,0 +1,158 @@
+pa ck a g e c on v er t er s;
+imp or t ja va .i o . *;
+pu b li c cla ss cu rr e n c y
+{
+i nt t y p e;
+d ou bl e DO LL AR, Y EN , E URO , I NR ;
+d ou bl e Va l ;
+S ca n n er s = n ew S ca nn e r( Sy st em.i n);
+pu bl i c v oi d fn Rea d ()
+{
+S y st em. ou t. pr i ntl n (“ E nt er t y p e o f D e n omi na ti o n : “ );
+S y st em. ou t. pr i ntl n (“ 1 : DO LL AR” );
+S y st em. ou t. pr i ntl n (“ 2 : E URO ” ) ;
+S y st em. ou t. pr i ntl n (“ 3 : YE N” );
+S y st em. ou t. pr i ntl n (“ 4 : IN R” );
+S y st em. ou t. pr i nt(“ E nt er op ti o n : “ );
+t y p e = I n te g e r. pa rs eI n t(s. n e x tL in e (). tr i m()) ;
+S y st em. ou t. pr i nt(“ E nt er nu mb e r o f d e n omina ti o n s t o b e co n v er t e d: “) ;
+Va l = D ou b l e. pa rs e D ou bl e (s. n e xt Li n e( ). trim());
+}
+pu bl i c v oi d fn C o n v ert ()
+{
+S y st em. ou t. pr i ntl n (“ Cu rr e n c y c o n v er sio n : “ );
+sw it c h( t yp e )
+{
+ca s e 1 : IN R = Va l * 6 8 . 8 4 ;
+S y ste m . ou t . p ri nt l n(“ D ol la r = “ + Va l);
+S y ste m. ou t . p ri nt l n(“ IN R = “ +IN R);
+b rea k ;
+ca s e 2 : IN R = Va l * 8 0 . 9 0 ;
+S y ste m . ou t . p ri nt l n(“ E U RO = “ + Va l);
+S y ste m. ou t . p ri nt l n(“ IN R = “ + IN R);
+b rea k ;
+ca s e 3 : IN R = Va l * 0 . 6 2 ;
+S y ste m . ou t . p ri nt l n(“ Y EN = “ + Va l );
+S y ste m . ou t . p r i nt l n(“ IN R = “ + IN R);
+b rea k ;
+ca s e 4 : DO LL AR = Va l / 6 8 . 8 4 ;
+E URO = Va l / 8 0 . 9 0 ;
+YEN = Va l / 0 .6 2 ;
+S y ste m. ou t . p ri nt l n(“ IN R = “ + Va l );
+S y ste m. ou t . p ri nt l n(“ D ol la r = “ + DO LL AR);
+S y ste m. ou t . p ri nt l n(“ E URO = “ + E UR O );
+S y ste m. ou t . p ri nt l n(“ Y EN = “ + Y EN );
+b rea k ;
+}
+}
+}
+
+// di st anc e .j av a
+pa ck a g e c on v er t er s;
+imp or t ja va . u ti l. *;
+pu b li c cla ss di sta nc e
+{
+i nt t y p e;
+d ou bl e M ET ER , KM , M IL ES ;
+d ou bl e Va l ;
+S ca n n er s = n ew S ca nn e r( Sy st em.i n);
+pu bl i c v oi d fn R ea d()
+{
+S y st em. ou t. pr i ntl n (“ E nt er t y p e : “ );
+S y st e m . ou t . pr i ntl n (“ 1 : MET ER” );
+S y st em. ou t. pr i ntl n (“ 2 : MIL E S” );
+S y st em. ou t. pr i ntl n (“ 3 : KM” );
+S y st em. ou t. pr i nt(“ E nt er op ti o n : “ );
+t y p e = I n te g e r. pa rs eI n t(s. n e x tL in e (). tr i m()) ;
+S y st em. ou t. pr i nt(“ E nt er Va lu e t o b e co n v er t e d : “ ) ;
+Va l = D ou b l e. pa rs eDou bl e (s. n e xt Li n e( ). tri m()) ;
+}
+pu bl i c v oi d fn C o n v ert ()
+{
+S y st em. ou t. pr i ntl n (“ Dista n c e c o nv e rsi o n : “ ) ;
+swit c h( t yp e )
+{
+ca s e 1 : KM = Va l / 1 0 0 0 ;
+S y ste m. ou t . p ri nt l n(“ MET E R = ” + Va l);
+S y ste m. ou t . p ri nt l n(“ KM = ” + KM) ;
+b rea k ;
+ca s e 2 : KM = Va l / 0 . 6 2 1 3 7 1 ;
+S y ste m. ou t . p ri nt l n(“ MI LE S = “ + Va l) ;
+S y ste m. ou t . p ri nt l n(“ KM = “ + KM) ;
+b rea k ;
+ca s e 3 : MET ER = Va l * 1 0 0 0 ;
+MIL ES = Va l * 0 . 6 2 1 3 7 1 ;
+S y ste m. ou t . p ri nt l n(“ K M = “ + Va l );
+S y ste m. ou t . p ri nt l n(“ MET E R = “ +M E T ER);
+S y ste m. ou t . p ri nt l n(“ MI LE S = “ + M IL ES) ;
+b rea k ;
+}
+}
+}
+
+// time.java
+package converters;
+import java.io.*;
+importjava.util.*;
+public class time
+{
+int type;
+int HR, MIN, SEC ;
+int Val;
+Scanner s = new Scanner(System.in);
+public void fnRead()
+{
+System.out.println(“INPUT TYPE : “);
+System.out.println(“1 : SECONDS”);
+System.out.println(“2 : MINUTES”);
+System.out.println(“3 : HOURS”);
+System.out.print(“Enter option : “);
+type = Integer.parseInt(s.nextLine().trim());
+System.out.print(“Enter value : “);
+Val = Integer.parseInt(s.nextLine().trim());
+}
+public void fnConvert()
+{
+System.out.println(“Time conversion : “);
+switch(type)
+{
+case 1: MIN = (Val / 60) % 60;
+HR = Val / 3600;
+SEC = Val % 60;
+System.out.println(Val + ” Seconds = ” + HR + ” hours, “+ MIN +” minutes and ” + SEC+” seconds”);
+break;
+case 2: HR = Val / 60;
+MIN = Val % 60;
+SEC = Val * 60;
+System.out.println(Val + ” Minutes = ” + HR + ” hours and “+ MIN +” minutes”);
+System.out.println(Val + ” Minutes = ” + SEC +” Seconds”);
+break;
+case 3: HR = Val;
+MIN = Val * 60;
+SEC = MIN * 60;
+System.out.println(HR + ” Hours = “+MIN + ” Minutes”);
+System.out.println(HR + ” Hours = “+SEC + ” Seconds”);
+System.out.println(HR + ” Hours = “+MIN + ” Minutes”);
+System.out.println(HR + ” Hours = “+SEC + ” Seconds”);
+break;
+}}
+}
+
+// Conversion.java
+import java.io.*;
+importjava.util.*;
+import converters.*;
+class Conversion
+{
+public static void main(String as[])
+{
+currency c1 = new currency();
+c1.fnRead();
+c1.fnConvert();
+distance d1 = new distance();
+d1.fnRead();
+d1.fnConvert();
+time t1 = new time();
+t1.fnRead();
+t1.fnConvert();
+}}
